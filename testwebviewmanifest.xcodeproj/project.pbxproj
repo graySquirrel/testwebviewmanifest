@@ -45,6 +45,7 @@
 		8486647A1CD8DEB3005D53C4 /* testwebviewmanifestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testwebviewmanifestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8486647E1CD8DEB3005D53C4 /* testwebviewmanifestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testwebviewmanifestUITests.swift; sourceTree = "<group>"; };
 		848664801CD8DEB3005D53C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84D1D9661CDA7E1E00C43689 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +98,7 @@
 			children = (
 				848664611CD8DEB3005D53C4 /* AppDelegate.swift */,
 				848664631CD8DEB3005D53C4 /* ViewController.swift */,
+				84D1D9661CDA7E1E00C43689 /* Header.h */,
 				848664651CD8DEB3005D53C4 /* Assets.xcassets */,
 				848664671CD8DEB3005D53C4 /* Main.storyboard */,
 				8486646A1CD8DEB3005D53C4 /* Info.plist */,
@@ -391,6 +393,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fritzco.testwebviewmanifest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = testwebviewmanifest/Header.h;
 			};
 			name = Debug;
 		};
@@ -403,6 +406,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fritzco.testwebviewmanifest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = testwebviewmanifest/Header.h;
 			};
 			name = Release;
 		};
@@ -475,6 +479,7 @@
 				848664851CD8DEB3005D53C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		848664861CD8DEB3005D53C4 /* Build configuration list for PBXNativeTarget "testwebviewmanifestTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +488,7 @@
 				848664881CD8DEB3005D53C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		848664891CD8DEB3005D53C4 /* Build configuration list for PBXNativeTarget "testwebviewmanifestUITests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +497,7 @@
 				8486648B1CD8DEB3005D53C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

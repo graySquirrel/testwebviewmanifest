@@ -7,21 +7,26 @@
 //
 
 import Cocoa
+import WebKit
 
 class ViewController: NSViewController {
 
+    let THEURL:String = "http://13.230.21.154/WithManifest/"
+    
+    @IBOutlet var webview: WebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        webview.preferences.setOfflineWebApplicationCacheEnabled(true)
+        
+//        [prefs setApplicationCacheTotalQuota:defaultTotalQuota];
+//        [prefs setApplicationCacheDefaultOriginQuota:defaultOriginQuota];
+//        [prefs _setLocalStorageDatabasePath:@"~/Library/Application Support/My webView/LocalStorage/"];
+//        [prefs setLocalStorageEnabled:YES];
+        
+        let url = NSURL(string: THEURL)
+        let request  = NSURLRequest(URL: url!, cachePolicy:NSURLRequestCachePolicy.ReturnCacheDataElseLoad ,timeoutInterval: 10)
+        webview.mainFrame.loadRequest(request)
     }
-
-    override var representedObject: AnyObject? {
-        didSet {
-        // Update the view, if already loaded.
-        }
-    }
-
-
 }
 
